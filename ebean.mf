@@ -1,0 +1,3 @@
+entity-packages: com.redswift.store.entities
+#transactional-packages: com.baeldung.ebean.app
+

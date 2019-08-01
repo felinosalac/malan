@@ -1,0 +1,7 @@
+Login (Basic Auth):
+
+http://localhost:8080/oauth/token?grant_type=password&username=user&password=user
+
+Basic Auth
+Username:my-trusted-client
+Password: secret

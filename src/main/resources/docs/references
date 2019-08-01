@@ -1,0 +1,11 @@
+Spring Security OAuth2
+https://www.youtube.com/watch?v=0pD7YeTAUkk
+https://github.com/hantsy/spring-microservice-sample/blob/master/auth-service/src/main/java/com/hantsylabs/sample/springmicroservice/auth/AuthServiceApplication.java#L55-L59
+https://dzone.com/articles/securing-rest-services-with-oauth2-in-springboot-1
+
+
+Refresh Token:
+https://jugbd.org/2017/09/19/implementing-oauth2-spring-boot-spring-security/
+
+
+https://github.com/khandelwal-arpit/springboot-starterkit

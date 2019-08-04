@@ -140,38 +140,6 @@
 			<artifactId>jaxb-runtime</artifactId>
 			<version>2.3.0-b170127.1453</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.ebean/ebean -->
-		<dependency>
-			<groupId>io.ebean</groupId>
-			<artifactId>ebean</artifactId>
-			<version>11.41.4</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<!-- <version>1.4.196</version> -->
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<!-- <version>1.2.3</version> -->
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
-		<dependency>
-			<groupId>com.zaxxer</groupId>
-			<artifactId>HikariCP</artifactId>
-			<version>3.3.1</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<!-- <dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.47</version>
-		</dependency> -->
 	</dependencies>
 
 	<build>
@@ -179,23 +147,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>io.ebean</groupId>
-				<artifactId>ebean-maven-plugin</artifactId>
-				<version>11.11.2</version>
-				<executions>
-					<execution>
-						<id>main</id>
-						<phase>process-classes</phase>
-						<configuration>
-							<transformArgs>debug=1</transformArgs>
-						</configuration>
-						<goals>
-							<goal>enhance</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>

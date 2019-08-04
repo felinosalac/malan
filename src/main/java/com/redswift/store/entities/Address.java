@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-//@Entity
+@Entity(name="address")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

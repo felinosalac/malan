@@ -10,25 +10,18 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity(name = "roles")
+@Entity(name="products")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
-public class Role extends BaseEntity{
-
-    public Role(String role) {
-		this.name=role;
-	}
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class Product {
 	
 	@Id
     @GeneratedValue
     private Long id;
+	private String code;
 	private String name;
-    
+
 }

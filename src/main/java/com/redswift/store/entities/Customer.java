@@ -2,9 +2,11 @@ package com.redswift.store.entities;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-@Entity
+@Entity(name="customers")
 public class Customer extends BaseEntity {
  
     /**
@@ -18,6 +20,9 @@ public class Customer extends BaseEntity {
         this.address = address;
     }
  
+	@Id
+    @GeneratedValue
+    private Long id;
     private String name;
  
     @OneToOne(cascade = CascadeType.ALL)

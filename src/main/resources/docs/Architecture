@@ -1,0 +1,10 @@
+Technologies:
+
+Java 8
+Spring Boot 2.1 
+Spring Framework 5.1.
+Swagger
+HikariCP Datasource/Connection Pooling
+JPA > Hibernate
+Live Reload
+Spring Security > OAuth2

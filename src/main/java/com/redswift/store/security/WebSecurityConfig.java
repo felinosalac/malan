@@ -69,14 +69,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @EventListener
     public void authSuccessEventListener(AuthenticationSuccessEvent authorizedEvent){
         // write custom code here for login success audit
-    	logger.info("User Oauth2 login success " + authorizedEvent.getAuthentication().getPrincipal());
+    	//logger.info("User Oauth2 login success " + authorizedEvent.getAuthentication().getPrincipal());
     }
     
     @EventListener
     public void authFailedEventListener(AbstractAuthenticationFailureEvent oAuth2AuthenticationFailureEvent){
         // write custom code here login failed audit.
-    	logger.info("User Oauth2 login Failed");
-    	logger.info(""+oAuth2AuthenticationFailureEvent.getAuthentication().getPrincipal());
+    	//logger.info("User Oauth2 login Failed");
+    	//logger.info(""+oAuth2AuthenticationFailureEvent.getAuthentication().getPrincipal());
     }
     
 //    @Bean

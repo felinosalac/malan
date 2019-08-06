@@ -1,0 +1,8 @@
+How to kill a process in port 8080
+
+sudo lsof -t -i:9001
+kill -9 {pid}
+
+or
+
+sudo kill `sudo lsof -t -i:9001`

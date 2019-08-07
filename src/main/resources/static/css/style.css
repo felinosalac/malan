@@ -81,6 +81,12 @@ body {
     color: #fff;
     border: none;
 }
+
+/*carousel section */
+#carouselSection {
+    padding: 50px 0 100px 0;
+}
+
 /* style footer */
 .footer {
     color: grey;

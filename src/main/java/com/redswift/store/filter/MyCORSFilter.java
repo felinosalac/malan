@@ -28,7 +28,7 @@ public class MyCORSFilter implements Filter {
 
 
 		final HttpServletResponse response = (HttpServletResponse) res;
-		response.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
+		response.setHeader("Access-Control-Allow-Origin", "http://localhost:8081");
 		// without this header jquery.ajax calls returns 401 even after successful login
 		// and SSESSIONID being succesfully stored.
 		response.setHeader("Access-Control-Allow-Credentials", "true");

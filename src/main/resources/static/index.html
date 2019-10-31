@@ -14,6 +14,10 @@
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -75,7 +79,7 @@
     <!-- create contact button -->
     <div class="contact">
         <div class="container">
-            <a href="#" class="btn">Get in touch</a>
+            <a href="#" class="btn" id='getInTouch'>Get in touch</a>
         </div>
     </div>
     <!-- create footer -->
@@ -84,8 +88,42 @@
             <p>Copyright&copy; 2019 www.malan.info | Website developed by Fernan Salac =) </p>
         </div>
     </div>
+    <div id="data">Data</div>
 
     <!-- JQuery and bootstrap JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</body></html>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        const endpointUrl = 'https://jsonplaceholder.typicode.com/posts';
+        $('#getInTouch').click(function(){
+            $.get(endpointUrl, function(data, status){
+                //console.log(JSON.stringify(data));
+                
+                var $data = $('#data');
+               
+                $("body").append(JSON.stringify(data));   
+                
+                // iterate through each object in JSON array
+                data.forEach(function(item) {
+
+                    // create an unordered list node
+                    var $ul = $('<ul></ul>');
+
+                    // iterate through all the properties of current JSON object
+                    for (var field in item) {
+
+                    // append list item node to list node
+                    $ul.append(`<li>${field}: ${item[field]}</li>`);
+    }
+
+                // append list node to parent node
+                    $data.append($ul);
+                });
+            })
+        });
+    });
+</script>
+
+</html>

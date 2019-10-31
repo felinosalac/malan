@@ -5,3 +5,11 @@ http://localhost:8080/oauth/token?grant_type=password&username=user&password=use
 Basic Auth
 Username:my-trusted-client
 Password: secret
+
+
+----------
+Swagger URL
+----------
+
+http://localhost:8080/swagger-ui.html
+
